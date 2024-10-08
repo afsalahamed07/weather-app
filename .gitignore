@@ -1,0 +1,4 @@
+node_modules/.bin
+node_modules
+bak.json
+package-lock.json

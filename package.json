@@ -1,0 +1,29 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "Afsal Rasheed",
+  "license": "ISC",
+  "description": "Assignment from the Odin the Project for async JavaScript",
+  "private": true,
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "postcss": "^8.4.47",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.0.6",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.13",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
+  }
+}
