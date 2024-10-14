@@ -1,3 +1,12 @@
-const body = document.querySelector("body");
+import { weather } from "./model/weather";
+import { apiCall, getWeather } from "./infra/openWeatherApi";
+import api from "./infra/openWeatherApiKey.json";
 
-body.innerHTML = "test";
+const BODY = document.querySelector("body");
+
+const w1 = weather("Burmingom");
+
+console.log(w1.getTemp());
+
+const data = await getWeather(33.44, -94.04, api.key);
+console.log(data);
