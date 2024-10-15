@@ -8,5 +8,9 @@ const w1 = weather("Burmingom");
 
 console.log(w1.getTemp());
 
-const data = await getWeather(33.44, -94.04, api.key);
-console.log(data);
+try {
+  const data = await getWeather(33.44, -94.04, api.key);
+  console.log(data);
+} catch (err) {
+  console.log("Error Occured");
+}
