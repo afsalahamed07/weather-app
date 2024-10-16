@@ -3,3 +3,4 @@ node_modules
 bak.json
 package-lock.json
 src/infra/openWeatherApiKey.json
+dist

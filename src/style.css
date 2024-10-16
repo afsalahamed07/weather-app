@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:italwght@0300..800;1300..800&family=Roboto:italwght@0100;0300;0400;0500;0700;0900;1100;1300;1400;1500;1700;1900&family=Ubuntu:italwght@0300;0400;0500;0700;1300;1400;1500;1700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Gugi&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fresca&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap);
+
+@layer base {
+    @font-family {
+        font-family: Ubuntu;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-family {
+        font-family: Gugi;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-family {
+        font-family: Fresca;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-family {
+        font-family: Dosis;
+        font-weight: 200;
+        font-style: normal;
+    }
+}
+
+.content {
+    @apply container flex flex-col mx-auto p-4 font-ubuntu;
+}
+
+.weather-box {
+    @apply mx-auto flex flex-col p-4 text-xl gap-3;
+
+    .city {
+        @apply font-fresca text-4xl;
+    }
+}
