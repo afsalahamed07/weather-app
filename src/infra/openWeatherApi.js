@@ -1,5 +1,5 @@
 function apiCall(lat, lon, apiKey) {
-  // return `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+  return `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 }
 
 function apiCallByCity(city, apiKey) {
@@ -25,18 +25,13 @@ async function getWeather(lat, lon, apiKey) {
   }
 }
 
-// Doubt would be why i have to wrap the funcition with async
+// uses city insted of lat and lang to
+// fetch weather
 async function getWeatherByCity(city, apiKey) {
   try {
-    // returns a promise json weather response from openweather
-
-    // await saying is like sayig pause the exceuction of this funciton
-    // until we get the value
     const response = await fetch(apiCallByCity(city, apiKey));
     const weatherData = await response.json();
 
-    // without async the return would be
-    // return Promise.resolve(weatherData)
     return weatherData;
   } catch (err) {
     console.log("Error happened");
